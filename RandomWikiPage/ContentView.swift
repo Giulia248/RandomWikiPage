@@ -11,7 +11,7 @@ import WebKit
 
 struct ContentView: View {
     @State var title = " nil "
-    @State var title2: [String] = []
+    
     
     var body: some View {
         
@@ -26,6 +26,7 @@ struct ContentView: View {
                 do{
                     
                     try print(wikiPageTry())
+                    try title = wikiPageTry()
                     print("debug1")
                     try print(wikiPage())
                 }catch{
@@ -35,11 +36,11 @@ struct ContentView: View {
 Text("Generate").padding().foregroundColor(.black).font(.system(size: 30)).overlay(RoundedRectangle(cornerRadius:50).stroke(Color.black,   lineWidth: 5))
           
       }.offset(x: 0, y: 300)
+            ScrollView{
+            Text(title).padding().foregroundColor(.black).font(.system(size: 15)).offset(x: 0, y: 0)
             
-            Text(title).padding().foregroundColor(.black).font(.system(size: 30)).offset(x: 0, y: 0)
             
-            
-            
+            }.padding()
         }
     }
 }
@@ -90,22 +91,21 @@ func wikiPage()  throws -> String {
 }
 
 
-func wikiPageTry()   throws -> [Node] {
-  
-    var text : [Node] = []
-    
-    var data:Data
+func wikiPageTry()   throws -> String{
     let url = URL(string:"https://it.wikipedia.org/wiki/Speciale:PaginaCasuale")!
     let html = try String(contentsOf: url)
     let document = try SwiftSoup.parse(html)
     print(try document.title())
     
-    let soup:Document = try! SwiftSoup.parseBodyFragment(html)
+    let soup: Document = try! SwiftSoup.parseBodyFragment(html)
     let p : Elements = try! soup.select("p")
     for j in p{
        
-        text.append(try! j.getChildNodes())
+        //print(try! j.getChildNodes())
+        
     }
-    return text
+    
+    return try document.text()
+     
 }
 
