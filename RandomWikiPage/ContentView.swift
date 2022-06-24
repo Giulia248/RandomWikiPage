@@ -9,13 +9,27 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ZStack{
+            Image("a").resizable().frame(width: 800, height: 1000).offset(x: 0, y: 0)
+            
+        }
+        
+        
+        
+        
+        
     }
 }
 
+
+
+
+//°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+
+//°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°
