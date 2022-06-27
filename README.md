@@ -3,6 +3,8 @@
 IOS App based on Qrcode generation and web scraping 
 Collaboration with 	@stefanospin7
 
+Made with [contributors-img]([https://contrib.rocks](https://github.com/stefanospin7)).
+
 ## Screenshots
 
 ![1](https://user-images.githubusercontent.com/106954791/175944813-f9afa2be-066d-41f5-a8bb-b36ba3614104.png)
