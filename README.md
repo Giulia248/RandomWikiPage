@@ -3,7 +3,7 @@
 IOS App based on Qrcode generation and web scraping 
 
 
-[Stefano](https://github.com/stefanospin7)
+[Collaboration with Stefano](https://github.com/stefanospin7)
 
 
 
