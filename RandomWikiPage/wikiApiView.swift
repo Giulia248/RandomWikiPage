@@ -53,61 +53,94 @@ struct wikiApiView: View {
     
     var body: some View {
         
-        ScrollView{
-            VStack{
-                
-                Text("Random Wikipedia page generator")
-                    .font(.title)
-                    .fontWeight(.heavy)
-                    .foregroundColor(.cyan)
-                
-                Image(uiImage: generateQrCodeFromString(string: "Title : \(article1[contatore]) Description: \(article1[contatore])"))
-                    .resizable()
-                    .interpolation(.none)
-                    .scaledToFit()
-                    .frame(width: 250, height: 250, alignment: .center)
-                
-                
-                }
-                
-                DisclosureGroup(
-                    content: {
-                        // Date and Note
-                        HStack{
-                            Text("Description:").lineLimit(nil).multilineTextAlignment(.leading)
-                 
-                            Spacer()
-                        }
-                        
-                        HStack{
-                        Text("\(article2[contatore])")
-                            .font(.body)
-                            .bold()
-                            //.lineLimit(1)
-                            
-                            Spacer()
-                        }
-                        
-                    },
-                    label: {
-                        Text("\(article1[contatore])")
-                            .font(.system(size: 20))
-                            .fontWeight(.bold)
-                       
-                        
-                    }
-                ).padding()
+      
+        ZStack{
             
           
-        }
+//            Image("a")
+//                .ignoresSafeArea()
+             
+                     
+         
+            VStack{
+       
+         
+                
+                Text("Random Wikipedia page generator")  .font(.title2)
+                    .fontWeight(.heavy)
+                    .foregroundColor(.cyan)
+                    .padding()
+                
+
         
-        Spacer()
-        Button("Next") {
+                      Image(uiImage: generateQrCodeFromString(string: "Title : \(article1[contatore]) Description: \(article1[contatore])"))
+                          .resizable()
+                          .interpolation(.none)
+                          .scaledToFit()
+                          .frame(width: 250, height: 250, alignment: .center)
+                          .padding()
+                      
+                VStack{
+                    HStack{
+                    DisclosureGroup(
+                        content: {
+                            // Date and Note
+                            HStack{
+                                Text("Description:").lineLimit(nil).multilineTextAlignment(.leading)
+                     Spacer()
+                            
+                            }
+                            
+                            HStack{
+                            Text("\(article2[contatore])")
+                                .font(.body)
+                                .bold()
+                                //.lineLimit(1)
+                                
+                                Spacer()
+                            }
+                            
+                        },
+                        label: {
+                            Text("\(article1[contatore])")
+                                .font(.system(size: 20))
+                                .fontWeight(.bold)
+                           
+                            
+                        }
+                    )
+                    
+                    }.padding()
+                    
+                }.padding()
+                      
+                      
+
+                Spacer()
+                      
+                      
+                    
+                      Button {
+                                      
+                                      viewDesc()
+                                                           
+                              }label :{
+                                  Text("Next").padding().foregroundColor(.black).font(.system(size: 30)).overlay(RoundedRectangle(cornerRadius:50).stroke(Color.black, lineWidth: 5))
+                                  
+                              }
+                          
+            }
+             
+//            .offset(x: 0, y: -350)
             
-            
-            viewDesc()
             
         }
+
+
+        
+   
+
+        
     }
     func generateQrCodeFromString(string:String) -> UIImage{
         

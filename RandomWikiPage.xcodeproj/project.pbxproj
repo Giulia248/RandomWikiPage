@@ -12,6 +12,8 @@
 		CEC3F0EE2865F878007EDF40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC3F0ED2865F878007EDF40 /* Preview Assets.xcassets */; };
 		CEED442E28699F84000AE54B /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = CEED442D28699F84000AE54B /* WikipediaKit */; };
 		CEED443028699FD2000AE54B /* wikiApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED442F28699FD2000AE54B /* wikiApiView.swift */; };
+		CEED44352869C395000AE54B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED44342869C395000AE54B /* MainView.swift */; };
+		CEED44372869C3E0000AE54B /* infosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED44362869C3E0000AE54B /* infosView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		CEC3F0EA2865F878007EDF40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC3F0ED2865F878007EDF40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEED442F28699FD2000AE54B /* wikiApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikiApiView.swift; sourceTree = "<group>"; };
+		CEED44342869C395000AE54B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		CEED44362869C3E0000AE54B /* infosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infosView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				CEC3F0E62865F872007EDF40 /* RandomWikiPageApp.swift */,
+				CEED44342869C395000AE54B /* MainView.swift */,
+				CEED44362869C3E0000AE54B /* infosView.swift */,
 				CEED442F28699FD2000AE54B /* wikiApiView.swift */,
 				CEC3F0EA2865F878007EDF40 /* Assets.xcassets */,
 				CEC3F0EC2865F878007EDF40 /* Preview Content */,
@@ -146,7 +152,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEED44372869C3E0000AE54B /* infosView.swift in Sources */,
 				CEED443028699FD2000AE54B /* wikiApiView.swift in Sources */,
+				CEED44352869C395000AE54B /* MainView.swift in Sources */,
 				CEC3F0E72865F872007EDF40 /* RandomWikiPageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

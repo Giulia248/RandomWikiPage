@@ -11,8 +11,8 @@ import SwiftUI
 struct RandomWikiPageApp: App {
     var body: some Scene {
         WindowGroup {
-            //ContentView()
-            wikiApiView()
+            
+            MainView()
         }
     }
 }
