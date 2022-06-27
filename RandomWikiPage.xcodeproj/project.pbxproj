@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		CEC3F0E72865F872007EDF40 /* RandomWikiPageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3F0E62865F872007EDF40 /* RandomWikiPageApp.swift */; };
-		CEC3F0E92865F872007EDF40 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC3F0E82865F872007EDF40 /* ContentView.swift */; };
 		CEC3F0EB2865F878007EDF40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC3F0EA2865F878007EDF40 /* Assets.xcassets */; };
 		CEC3F0EE2865F878007EDF40 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC3F0ED2865F878007EDF40 /* Preview Assets.xcassets */; };
-		CEC3F0F62865FC07007EDF40 /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = CEC3F0F52865FC07007EDF40 /* SwiftSoup */; };
+		CEED442E28699F84000AE54B /* WikipediaKit in Frameworks */ = {isa = PBXBuildFile; productRef = CEED442D28699F84000AE54B /* WikipediaKit */; };
+		CEED443028699FD2000AE54B /* wikiApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED442F28699FD2000AE54B /* wikiApiView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEC3F0E32865F872007EDF40 /* RandomWikiPage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomWikiPage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC3F0E62865F872007EDF40 /* RandomWikiPageApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomWikiPageApp.swift; sourceTree = "<group>"; };
-		CEC3F0E82865F872007EDF40 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEC3F0EA2865F878007EDF40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC3F0ED2865F878007EDF40 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEED442F28699FD2000AE54B /* wikiApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikiApiView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,7 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC3F0F62865FC07007EDF40 /* SwiftSoup in Frameworks */,
+				CEED442E28699F84000AE54B /* WikipediaKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				CEC3F0E62865F872007EDF40 /* RandomWikiPageApp.swift */,
-				CEC3F0E82865F872007EDF40 /* ContentView.swift */,
+				CEED442F28699FD2000AE54B /* wikiApiView.swift */,
 				CEC3F0EA2865F878007EDF40 /* Assets.xcassets */,
 				CEC3F0EC2865F878007EDF40 /* Preview Content */,
 			);
@@ -86,7 +86,7 @@
 			);
 			name = RandomWikiPage;
 			packageProductDependencies = (
-				CEC3F0F52865FC07007EDF40 /* SwiftSoup */,
+				CEED442D28699F84000AE54B /* WikipediaKit */,
 			);
 			productName = RandomWikiPage;
 			productReference = CEC3F0E32865F872007EDF40 /* RandomWikiPage.app */;
@@ -118,6 +118,7 @@
 			mainGroup = CEC3F0DA2865F872007EDF40;
 			packageReferences = (
 				CEC3F0F42865FC07007EDF40 /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+				CEED442C28699F84000AE54B /* XCRemoteSwiftPackageReference "WikipediaKit" */,
 			);
 			productRefGroup = CEC3F0E42865F872007EDF40 /* Products */;
 			projectDirPath = "";
@@ -145,7 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC3F0E92865F872007EDF40 /* ContentView.swift in Sources */,
+				CEED443028699FD2000AE54B /* wikiApiView.swift in Sources */,
 				CEC3F0E72865F872007EDF40 /* RandomWikiPageApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,13 +356,21 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		CEED442C28699F84000AE54B /* XCRemoteSwiftPackageReference "WikipediaKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Raureif/WikipediaKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CEC3F0F52865FC07007EDF40 /* SwiftSoup */ = {
+		CEED442D28699F84000AE54B /* WikipediaKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CEC3F0F42865FC07007EDF40 /* XCRemoteSwiftPackageReference "SwiftSoup" */;
-			productName = SwiftSoup;
+			package = CEED442C28699F84000AE54B /* XCRemoteSwiftPackageReference "WikipediaKit" */;
+			productName = WikipediaKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
