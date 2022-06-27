@@ -9,19 +9,28 @@ import SwiftUI
 
 struct MainView: View {
     var body: some View {
-        
+        NavigationView{
         TabView {
                   wikiApiView()
                        .tabItem {
                            Label("QrCodeGenerator", systemImage: "qrcode")
+                               .navigationTitle("QrCodeGenerator")
                        }
 
-                  infosView()
+                  CustomQrCode()
                        .tabItem {
-                           Label("Infos", systemImage: "info.circle")
+                           Label("CustomQrCode", systemImage: "qrcode.viewfinder").foregroundColor(.black)
+                               .navigationTitle("CustomQrCode")
                        }
+            
+            infosView()
+                 .tabItem {
+                     Label("About", systemImage: "info.circle")
+                         .navigationTitle("About")
+                 }
+        }
+      }
     }
-}
 }
 
 struct MainView_Previews: PreviewProvider {

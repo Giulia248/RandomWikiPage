@@ -14,6 +14,8 @@
 		CEED443028699FD2000AE54B /* wikiApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED442F28699FD2000AE54B /* wikiApiView.swift */; };
 		CEED44352869C395000AE54B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED44342869C395000AE54B /* MainView.swift */; };
 		CEED44372869C3E0000AE54B /* infosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED44362869C3E0000AE54B /* infosView.swift */; };
+		CEED44392869D453000AE54B /* CustomQrCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED44382869D453000AE54B /* CustomQrCode.swift */; };
+		CEED443B2869D923000AE54B /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEED443A2869D923000AE54B /* customButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CEED442F28699FD2000AE54B /* wikiApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wikiApiView.swift; sourceTree = "<group>"; };
 		CEED44342869C395000AE54B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		CEED44362869C3E0000AE54B /* infosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infosView.swift; sourceTree = "<group>"; };
+		CEED44382869D453000AE54B /* CustomQrCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomQrCode.swift; sourceTree = "<group>"; };
+		CEED443A2869D923000AE54B /* customButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +63,10 @@
 			children = (
 				CEC3F0E62865F872007EDF40 /* RandomWikiPageApp.swift */,
 				CEED44342869C395000AE54B /* MainView.swift */,
+				CEED44382869D453000AE54B /* CustomQrCode.swift */,
 				CEED44362869C3E0000AE54B /* infosView.swift */,
 				CEED442F28699FD2000AE54B /* wikiApiView.swift */,
+				CEED443A2869D923000AE54B /* customButton.swift */,
 				CEC3F0EA2865F878007EDF40 /* Assets.xcassets */,
 				CEC3F0EC2865F878007EDF40 /* Preview Content */,
 			);
@@ -154,6 +160,8 @@
 			files = (
 				CEED44372869C3E0000AE54B /* infosView.swift in Sources */,
 				CEED443028699FD2000AE54B /* wikiApiView.swift in Sources */,
+				CEED443B2869D923000AE54B /* customButton.swift in Sources */,
+				CEED44392869D453000AE54B /* CustomQrCode.swift in Sources */,
 				CEED44352869C395000AE54B /* MainView.swift in Sources */,
 				CEC3F0E72865F872007EDF40 /* RandomWikiPageApp.swift in Sources */,
 			);

@@ -68,7 +68,7 @@ struct wikiApiView: View {
                 
                 Text("Random Wikipedia page generator")  .font(.title2)
                     .fontWeight(.heavy)
-                    .foregroundColor(.cyan)
+                    .foregroundColor(CustomColor.bluScuro)
                     .padding()
                 
 
@@ -103,8 +103,10 @@ struct wikiApiView: View {
                         },
                         label: {
                             Text("\(article1[contatore])")
+                                .foregroundColor(CustomColor.bluScuro)
                                 .font(.system(size: 20))
                                 .fontWeight(.bold)
+                                
                            
                             
                         }
@@ -120,21 +122,33 @@ struct wikiApiView: View {
                       
                       
                     
-                      Button {
-                                      
-                                      viewDesc()
-                                                           
-                              }label :{
-                                  Text("Next").padding().foregroundColor(.black).font(.system(size: 30)).overlay(RoundedRectangle(cornerRadius:50).stroke(Color.black, lineWidth: 5))
-                                  
-                              }
+//                      Button {
+//
+//                                      viewDesc()
+//
+//                              }label :{
+//                                  Text("Next")
+//
+//
+//                                      .padding().foregroundColor(.black).font(.system(size: 30)).overlay(RoundedRectangle(cornerRadius:50).stroke(Color.black, lineWidth: 5))
+//
+//                              }
+//
+                Button("Next") {
+                    viewDesc()
+                        }
+                        .buttonStyle(BlueButton())
+                
+                
                           
             }
              
 //            .offset(x: 0, y: -350)
             
             
-        }
+        }.background(
+            LinearGradient(gradient: Gradient(colors: [.blue, .cyan, .white]), startPoint: .top, endPoint: .bottom)
+        )
 
 
         
@@ -165,11 +179,8 @@ struct wikiApiView_Previews: PreviewProvider {
     }
 }
 
-/*
-struct Article : Codable, Identifiable{
-    let id = UUID()
-    let title: String
-    let description : String
+struct CustomColor {
+  static let bluScuro = Color("bluScuro")
+  // Add more here...
 }
-*/
 
