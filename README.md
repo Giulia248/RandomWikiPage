@@ -1,7 +1,7 @@
 # RandomWikiPage
 
 IOS App based on Qrcode generation and web scraping 
-Collaboration with 	@stefanospin7
+[Stefano]([https://github.com/stefanospin7]))
 
 Made with [contributors-img]([https://contrib.rocks](https://github.com/stefanospin7)).
 
